@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorToolBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackGround</item>
+
+    </style>
+
+
+
+    <style name="BottomBarRB">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/font_bottombar</item>
+    </style>
+
+    <style name="MsgBar">
+        <item name="android:background">#ef0909</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/font_msgbar</item>
+    </style>
+
+
+
+</resources>

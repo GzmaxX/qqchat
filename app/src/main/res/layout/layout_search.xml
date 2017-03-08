@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/tv_back_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/icon_arrow_white_12"
+                android:text="返回"
+                android:textColor="@color/colorToolBarFont" />
+
+            <TextView
+                android:id="@+id/tv_name_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="搜索"
+                android:textColor="@color/colorToolBarFont"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_search"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_backgroud_sendbtn"
+            android:text="搜索" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/search_btn"
+            android:background="@drawable/shape_backgroud_search"
+            android:drawableLeft="@mipmap/icon_search_gray_32"
+            android:drawablePadding="10dp"
+            android:hint="请输入要搜索的内容"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textColorHint="#a6a6a6" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/colorSearchBackGroud"
+        android:id="@+id/recyclerview_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_search">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <WebView
+
+        android:id="@+id/wv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recyclerview_search">
+
+    </WebView>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolBar"
+        android:weightSum="1"
+        android:id="@+id/toolbar">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/user_icon_toolbar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/yellowduck" />
+
+            <RadioGroup
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_backgroud_msgbar"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_msg_msgbar"
+                    style="@style/MsgBar"
+                    android:background="@drawable/selector_msgbar_msg"
+                    android:text="消息" />
+
+                <RadioButton
+                    android:id="@+id/btn_phone_msgbar"
+                    style="@style/MsgBar"
+                    android:background="@drawable/selector_msgbar_phone"
+                    android:text="电话" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/iv_msg_add"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_add_white"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_search_msg"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_backgroud_search"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜索"
+            android:textSize="15dp"
+            android:textColor="#969696"/>
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_search_gray"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

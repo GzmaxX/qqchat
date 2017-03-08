@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 图片颜色#828282 -->
+    <LinearLayout
+        android:id="@+id/create"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_speech_gray_32"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/popupMenuFont"
+            android:textSize="15dp"
+            android:text="创建聊天"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_adduser_gray_240"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/popupMenuFont"
+            android:textSize="15dp"
+            android:text="添加好友"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scan"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_qrcode_gray_48"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/popupMenuFont"
+            android:textSize="15dp"
+            android:text="扫二维码"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shoot"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_camera_gray_240"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/popupMenuFont"
+            android:textSize="15dp"
+            android:text="拍摄"/>
+
+    </LinearLayout>
+
+</LinearLayout>

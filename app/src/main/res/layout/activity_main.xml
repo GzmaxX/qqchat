@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mjx.qqchat.Activity.MainActivity"
+    android:fitsSystemWindows="true">
+
+
+        <!-- 主页面 -->
+        <include
+            layout="@layout/mainpage"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+
+        <!-- 左侧滑页面 -->
+        <include
+                layout="@layout/drawer_left"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"/>
+</android.support.v4.widget.DrawerLayout>

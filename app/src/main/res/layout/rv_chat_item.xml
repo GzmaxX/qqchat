@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frichat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_chat_friimage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/image_user_1" />
+
+        <TextView
+            android:id="@+id/tv_chat_friname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_chat_friimage"
+            android:text="陈奕迅"
+            android:textColor="#b9b9b9"
+            android:textSize="10dp" />
+
+        <TextView
+            android:padding="5dp"
+            android:background="@drawable/shape_backgroud_frichat"
+            android:id="@+id/tv_chat_fricontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_chat_friname"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_chat_friimage"
+            android:maxLength="30"
+            android:text="adsfdsfdsfdsafdsafdsafdsfdsafsaddsadsadsdasdsaddsadsadsadsaafdfas"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mychat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_chat_myimage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/image_user_2" />
+
+        <TextView
+            android:id="@+id/tv_chat_myname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_chat_myimage"
+            android:text="周杰伦"
+            android:textColor="#b9b9b9"
+            android:textSize="10dp" />
+
+        <TextView
+            android:padding="5dp"
+            android:background="@drawable/shape_backgroud_mychat"
+            android:id="@+id/tv_chat_mycontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_chat_myname"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/iv_chat_myimage"
+            android:maxLength="30"
+            android:text="adsfdsfdsfdsafdsafdsafdsfdsafsaddsadsadsdasdsaddsadsadsadsaafdfas"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroudChat"
+  >
+
+    <!--上部栏-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/back_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_arrow_white_12"
+                android:textColor="@color/colorToolBarFont"
+                android:layout_centerVertical="true"
+                android:text="返回"/>
+
+            <TextView
+                android:id="@+id/name_chat"
+                android:layout_centerHorizontal="true"
+                android:text="名字"
+                android:textSize="20dp"
+                android:textColor="@color/colorToolBarFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/setting_chat"
+                android:src="@mipmap/icon_gear_white_240"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--底部发送栏-->
+    <RelativeLayout
+        android:id="@+id/chat_sendbar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sendmsg_chat"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="发送"
+            android:textSize="15dp"
+            android:background="@drawable/shape_backgroud_sendbtn"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/msginput_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColorHint="#b4b4b4"
+            android:background="@drawable/shape_backgroud_editchat"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#000"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/sendmsg_chat"
+            android:hint="请输入要发送的内容"
+            />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerview_chat"
+        android:layout_above="@id/chat_sendbar"
+        android:layout_below="@id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

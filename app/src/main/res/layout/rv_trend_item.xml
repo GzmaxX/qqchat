@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/shape_backgroud_frichat"
+    android:orientation="vertical">
+
+    <!-- 上部栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_trend_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_163" />
+
+        <TextView
+            android:id="@+id/tv_trend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_trend_icon"
+            android:text="网易新闻"
+            android:textColor="@color/colorfont_off"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_trend_more"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorfont_off"
+            android:text="查看更多" />
+
+    </RelativeLayout>
+
+    <!-- 主图片-->
+    <ImageView
+        android:id="@+id/iv_trend_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/waterball" />
+
+    <!-- 正文 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_trend_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:text="不用意外，未来15年中国将成劳动力缺口大国"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_trend_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="“中国最不缺的就是人”，很少有人会把中国跟人力短缺联系到一起，几乎所有人都更习惯13亿人口大国这一固定搭配。当我们脱口而出中国人口总数世界第一，这是事实，但这一基数也意味着随着老龄化的加速进程，中国即将成为劳动力缺口第一大国，这也在逐渐成为事实。"
+            android:textColor="#303030"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <!-- 下部栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <!-- like点赞 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_trend_like"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:button="@drawable/selector_like"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_trend_likecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="200"
+                android:textColor="@color/colorfont_off"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  |  "
+            android:textColor="@color/colorfont_off"
+            android:textSize="25dp" />
+
+        <!-- content评论 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_speech_gray_32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="340"
+                android:textColor="@color/colorfont_off"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

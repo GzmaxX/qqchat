@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@mipmap/backgroud_bottombar"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_msg_bottomBar"
+            style="@style/BottomBarRB"
+            android:drawableTop="@drawable/selector_bottombar_msg"
+            android:text="消息"
+
+            />
+
+        <RadioButton
+            android:id="@+id/btn_man_bottomBar"
+            style="@style/BottomBarRB"
+            android:drawableTop="@drawable/selector_bottombar_man"
+            android:text="联系人" />
+
+        <RadioButton
+            android:id="@+id/btn_trend_bottomBar"
+            style="@style/BottomBarRB"
+            android:drawableTop="@drawable/selector_bottombar_trend"
+            android:text="动态" />
+
+    </RadioGroup>
+
+</LinearLayout>

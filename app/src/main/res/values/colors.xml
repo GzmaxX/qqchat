@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackGround">#FFFFFF</color>
+    <color name="Textcolorleft">#FFFFFF</color>
+    <color name="colorToolBar">#0977fe</color>
+    <color name="colorfont_on">#0977fe</color>
+    <color name="colorfont_off">#9b9b9b</color>
+    <color name="colorPartingLine">#c2c2c2</color>
+    <color name="colorfontMsgBar_on">#0977fe</color>
+    <color name="colorfontMsgBar_off">#fff</color>
+    <color name="colorSearchBackGroud">#efefef</color>
+    <color name="colorToolBarFont">#fff</color>
+    <color name="colorBackgroudChat">#e9e9e9</color>
+    <color name="popupMenuFont">#1e1e1e</color>
+</resources>
